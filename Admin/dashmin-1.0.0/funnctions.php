@@ -22,18 +22,16 @@
         return $data;
  }
 
- function getJoin($tbl)
+ function getJoin($tbl ,$tbt)
  {
    $conn=connection();
-   $sql= "SELECT category.id,product_table.p_id,product_table.p_name
-   FROM category INNER JOIN product_table 
-   ON catgory.id = product_table.p_id $tbl" ;
+   $sql= "SELECT $tbl.id,$tbt.p_id,$tbt.p_name
+   FROM $tbl INNER JOIN $tbt
+   ON $tbl.id = $tbt.p_id";
    $res= mysqli_qurey($conn,$sql);
            while($row = mysqli_fetch_assoc($res))
 {
         $data[] = $row;
-    
-
 }
 return $data;
 }

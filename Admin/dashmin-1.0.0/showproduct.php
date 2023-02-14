@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 include './funnctions.php';
-$data = getJoin('product_table');
+$data = getJoin('category','product_table');
 // echo "<pre>";
 //  print_r($data);
 ?>
