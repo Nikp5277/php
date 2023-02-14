@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 include './funnctions.php';
-$data = getData('category');
+$data = getData('review');
 // echo "<pre>";
 //  print_r($data);
 ?>
@@ -23,9 +23,9 @@ $data = getData('category');
                                     <thead>
                                         <tr>
                                             <!-- <th scope="col">#</th> -->
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Image</th>
-                                            <th scope="col">Description</th>
+                                            <th scope="col">p_id</th>
+                                            <th scope="col">p_name</th>
+                                            <th scope="col">review_details</th>
                                             <th scope="col">Action</th>
                                           
                                           
@@ -34,9 +34,9 @@ $data = getData('category');
                                     <tbody>
                     <?php  foreach($data as $d)
                     {?>    <tr>
-                         <td> <?php echo $d["name"]?>
-                        <td> <?php echo $d["image"]?>  
-                        <td> <?php echo $d["description"]?>
+                         <td> <?php echo $d["p_id"]?>
+                        <td> <?php echo $d["p_name"]?>  
+                        <td> <?php echo $d["review_details"]?>
                        
                     </td>                                       
                                             <td>

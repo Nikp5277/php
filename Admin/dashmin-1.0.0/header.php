@@ -71,13 +71,22 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Product</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="showcategory.php" class="dropdown-item">Show Product</a>
+                            <a href="showproduct.php" class="dropdown-item">Show Product</a>
                           
                             <a href="addcategory.php" class="dropdown-item">Add Product </a>
                         </div>
                     </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Review</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="review.php" class="dropdown-item">Show review</a>
+                          
+                            <a href="addcategory.php" class="dropdown-item">Add review </a>
+                        </div>
+                    </div>
                 
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Review</a>
+                    
                         </div>
                     </div>
                 </div>
