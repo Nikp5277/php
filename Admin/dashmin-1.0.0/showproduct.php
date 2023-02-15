@@ -1,7 +1,8 @@
 <?php
 include 'header.php';
 include './funnctions.php';
-$data = getJoin('category','product_table');
+$data = getJoin();
+
 // echo "<pre>";
 //  print_r($data);
 ?>
@@ -34,14 +35,15 @@ $data = getJoin('category','product_table');
                                     <tbody>
                     <?php  foreach($data as $d)
                     {?>    <tr>
-                         <td> <?php echo $d["p_id"]?>
+                         
                         <td> <?php echo $d["p_name"]?>  
                         <td> <?php echo $d["p_detail"]?>
                        
                     </td>                                       
-                                            <td>
+                                            <td><a href='delete.php?id=<?php echo $d["id"]
+                                        ?>&tbl=cat'>
                                             <button type="button" class="btn btn-danger">Delete</button>
-
+                    </a>
 
                                         <button class='btn btn-info'>Update</button>
 

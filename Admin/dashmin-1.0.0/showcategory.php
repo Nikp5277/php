@@ -40,9 +40,12 @@ $data = getData('category');
                        
                     </td>                                       
                                             <td>
-                                            <button type="button" class="btn btn-danger">Delete</button>
+                                            <a href='delete.php?id=<?php echo $d["id"]
+                                        ?>&tbl=cat'>
+                                            <button type="button" class="btn btn-danger">Delete
 
-
+                                            </button>
+                    </a>
                                         <button class='btn btn-info'>Update</button>
 
                                         
